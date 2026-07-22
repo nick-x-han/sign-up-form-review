@@ -89,6 +89,14 @@ input {
   border: 1px solid #e5e7eb;
   padding: 4px;
   width: 15em;
+  border-radius: 4px;
+}
+
+input:user-invalid {
+    border: 1px solid red;
+}
+input:focus {
+  border: 1px solid blue;
 }
 
 label {
