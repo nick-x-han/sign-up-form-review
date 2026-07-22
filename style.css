@@ -54,16 +54,19 @@ body {
   flex-direction: column;
   justify-content: space-around;
   background-color: rgb(249, 249, 249);
-  padding-left: 2em;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 
   .top {
+    padding-left: 2em;
     .long-quote {
-        font-size: 1.5em;
+      font-size: 1.5em;
     }
   }
 
   .bottom {
+    padding-left: 2em;
   }
 
   & .form-text {
@@ -72,12 +75,20 @@ body {
 }
 
 form {
+  padding: 2em 40% 2em 2em;
   background-color: white;
+
+  & .form-rows {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 3em;
+  }
 }
 
 input {
   border: 1px solid #e5e7eb;
   padding: 4px;
+  width: 15em;
 }
 
 label {
@@ -87,7 +98,7 @@ label {
 }
 
 .form-row {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
