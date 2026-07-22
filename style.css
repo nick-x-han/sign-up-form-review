@@ -58,15 +58,29 @@ body {
     "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 
-  .top {
+  & .top {
     padding-left: 2em;
-    .long-quote {
+    .long-quote, .short-quote {
       font-size: 1.5em;
+    }
+    .short-quote {
+        margin-top: 1em;
     }
   }
 
-  .bottom {
+  & .bottom {
     padding-left: 2em;
+    & a {
+        text-decoration: none;
+        color: green;
+    }
+    & button {
+        background-color: #596D48;
+        color: white;
+        padding: 1em 3em;
+        border-radius: 8px;
+        font-size: 1rem;
+    }
   }
 
   & .form-text {
@@ -75,13 +89,13 @@ body {
 }
 
 form {
-  padding: 2em 40% 2em 2em;
+  padding: 2em 33% 2em 2em;
   background-color: white;
 
   & .form-rows {
     display: flex;
     flex-flow: row wrap;
-    gap: 3em;
+    gap: 1em 3em;
   }
 }
 
