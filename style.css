@@ -43,14 +43,51 @@ body {
   & .attribution {
     margin-bottom: 1em;
     & a {
-        color: inherit;
+      color: inherit;
     }
     color: white;
   }
-
-  
 }
 
-/* .x {
-    text-transform: capitalize;
-} */
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: rgb(249, 249, 249);
+  padding-left: 2em;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+  .top {
+    .long-quote {
+        font-size: 1.5em;
+    }
+  }
+
+  .bottom {
+  }
+
+  & .form-text {
+    font-size: 1.2em;
+  }
+}
+
+form {
+  background-color: white;
+}
+
+input {
+  border: 1px solid #e5e7eb;
+  padding: 4px;
+}
+
+label {
+  text-transform: uppercase;
+  color: rgb(80, 80, 80);
+  font-size: 12px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
